@@ -1,0 +1,55 @@
+/* src/Popup.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: 250px;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.popup-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #0077b5;
+}
+
+.count-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.btn {
+  background-color: #0077b5;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.stop-btn {
+  background-color: #f44336;
+}

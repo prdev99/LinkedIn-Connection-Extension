@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Connection Automation",
+  "version": "1.0",
+  "description": "Automate sending LinkedIn connection requests.",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/mynetwork/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
